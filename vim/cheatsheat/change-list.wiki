@@ -1,0 +1,6 @@
+= Changelist =
+The Changelist remembers the position of every change that can be undone. You can move back and forwards through the Changelist using the commands.
+
+`g;`       : Move backward in change list
+`g,`       : Move forward in change list
+`:changes` : View the contents of the Changelist

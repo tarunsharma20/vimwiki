@@ -1,0 +1,39 @@
+= Reset =
+
+== mixed (default) ==
+- *unstaged files*: don't change
+- *staged files*: move to unstaged
+- *commit files*: move to unstaged
+
+For example if we are branch master with the series of commits:
+*- A - B - C (master)*
+
+*HEAD* points to *C* and the index matches *C*. When we run `git reset B`.
+*HEAD* is now points to *B*, and the *index* is also modified to match *B*. We
+still have the changes in working directory. However they're not in the index.
+`git status` will show them *unstaged*.
+
+
+== soft ==
+- *unstaged files*: don't change
+- *staged files*: don't change
+- *commit files*: move to staged
+
+Starting from same example again:
+*- A - B - C (master)*
+
+When we run `git reset --soft B`. Once again *HEAD* points to *B*, but this time
+*index* still have the changes from *C*. `git status` will show them as
+*staged*. So if we run `git commit` at this point, we'll get a new *commit* with
+the same changes as *C*.
+
+== hard ==
+restore everything
+
+Same example again:
+*- A - B - C (master)*
+
+If we're at *C* and run `git reset --hard B`. Now the changes added in *C*, as
+well as any *uncommitted* changes you have, will be removed, and the files in
+your working copy will match *commit B*. Since you can permanently lose changes
+

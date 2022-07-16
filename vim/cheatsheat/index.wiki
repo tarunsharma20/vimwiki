@@ -1,0 +1,29 @@
+= Vim Cheatsheet =
+  1. [[insert-text|Insert Text]]: Commands to insert text in vim
+  2. [[navigation|Vim Navigation]]: Navigate between words, line, paragraph etc
+     in a page
+  3. [[editing|Editing]]: How to edit a file using vim
+  4. [[working-with-multiple-files|Working with multiple files]]: You can work with multiple files using
+     windows, buffers, splits, and tabs
+  5. [[change-list|Changelist]]: List of changes done recently
+  6. [[jump-list|Jumplist]]: List of locations visited recently
+  7. [[spell-checking|Spellchecking]]: check and fix spelling errors
+
+
+
+
+
+== Update multiple files in one go ==
+- open a file and start macro make all changes and close macro
+- open multiple files from `:args` Ex: `:args **/*.html` will open all HTML files
+  in args
+- above command will open all files you can verify using `:args` command
+- use `:argdo normal@qw` It'll run macro saved in 'q' in all args list
+
+
+== Tricks ==
+- [{ Move to block start with {
+- [( Move to block start with (
+- gq Reformat lines
+- bw *wiki press ctrl a enter - It will remove all files with extension wiki in
+  buffers

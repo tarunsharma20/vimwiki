@@ -1,0 +1,7 @@
+= Spell Checking =
+`]s`       : Next misspelled world
+`[s`       : Previous misspelled world
+`z=`       : Get suggestion to fix spelling
+`zg`       : Make misspelled world as correct
+`zw`       : Make a correct word as misspelled
+

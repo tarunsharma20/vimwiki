@@ -1,0 +1,38 @@
+= Vim Navigation =
+`k` : Move backward one line or `nk` to jump backward 'n' line
+`j` : Move forward one line or `nj` to jump forward 'n' line
+`l` : Move right side or `nl` to jump right 'n' columns
+`h` : Move left side or `nh` to jump left 'n' columns
+
+== Words ==
+`e` : Move to the end of a word
+`E` : Move to the end of the WORD (any non-whitespace characters)
+`b` : Move backward to the beginning of a word
+`B` : Move backward to the beginning of WORD (any non-whitespace characters)
+`w` : Move forward to beginning of next word
+`W` : Move forward to beginning of the next WORD (any non-whitespace characters)
+
+== Line ==
+`0`  : Move to the beginning of the line or at first column
+`^`  : Move to the first non-blank character of the line
+`$`  : Move to the end of the line
+`g_` : Move to the last non-blank character of the line
+`+`  : Move to the first non-blank character at next line
+`fx` : Move to next occurrence of character x in line
+`tx` : Move to before next occurrence of character x in line
+`Fx` : Move to previous occurrence of character x in line
+`Tx` : Move to after previous occurrence of character x in line
+`;`  : Repeat previous `f`, `t`, `F` or `T` movement
+`,`  : Repeat previous `f`, `t`, `F` or `T` movement, backward
+
+== Page ==
+`zz`     : Move current line to the center of screen
+`zt`     : Move current line to the top of screen
+`zb`     : Move current line to the end of screen
+`Ctrl+f` : Move forward one full screen
+`Ctrl+b` : Move backward one full screen
+`Ctrl+d` : Move forward (down) a half screen
+`Ctrl+u` : Move back (up) one half screen
+`Ctrl+e` : Move viewport up by single line
+`Ctrl+y` : Move viewport down by single line
+

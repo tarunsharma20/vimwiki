@@ -1,0 +1,7 @@
+tmux may be controlled from an attached client by using a key combination of a
+prefix key, 'C-b' (Ctrl-b) by default, followed by a command key.
+
+= Pane =
+`"`   : Split the current pane horizontally
+`%`   : Split the current pane vertically
+`z`   : Toggle zoom state of the current pane

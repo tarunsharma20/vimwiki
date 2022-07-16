@@ -1,0 +1,6 @@
+= My knowledge base =
+  * [[todo/index|TODO]]: Everything that's planned or need to be done.
+  * [[vim/index|vim]]: Vim documentation/cheatsheet
+  * [[git/index|git]]: Git documentation
+  * [[tmux/index|tmux]]: tmux documentation/cheatsheet
+  * [[learning/index|Learning]]

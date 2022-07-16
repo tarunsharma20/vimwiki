@@ -1,0 +1,99 @@
+= Editing =
+== Operator/Actions ==
+`c`       : Change
+`y`       : Yank(Copy)
+`d`       : Delete
+`p`       : Put (paste) the clipboard after cursor
+`=`       : Format
+`>`       : Add Indent
+`<`       : Remove Indent
+`v`       : Visually select
+`gn`      : Start visual mode and select next match
+`gN`      : Start visual mode and select previous match
+`Ctrl+v ` : Visually select column
+`zf`      : Define fold
+`g~`      : Togglecase
+`gu`      : Make Lowercase
+`gU`      : Make Uppercase
+
+== Text Objects/Motion ==
+`w` : Word (`W` for WORD delimited by white space)
+`s` : Sentence
+`p` : Paragraph
+`t` : Tag
+`%` : Code block
+`(` : Block surrounded by () (same as `)` or `b`)
+`{` : Block surrounded by {} (same as `}` or `B`)
+`[` : Block surrounded by [] (same as `]`)
+`<` : Block surrounded by <> (same as `>`)
+`'` : Surrounded by single quotes
+`"` : Surrounded by double quotes
+` : Surrounded by back tick
+
+== Modifiers ==
+`i`   : Inner
+`a`   : Around
+`NUM` : Number (e.g.: 1, 2, 28)
+`t`   : Till forward (Search forward for character and stops before it)
+`T`   : Till backward (Search backward for character and stops before it)
+`f`   : Find forward (Search forward for character and lands on it
+`F`   : Find backward (Search backward for character and lands on it)
+`/`   : Find
+
+== Example of performing an action in a target ==
+`dw`    : Delete word
+`ciw`   : Change in word
+`viw`   : Visually select word
+`yas`   : Yank a sentence
+`c2iw`  : Change two words
+`dta`   : Delete till character 'a'
+`dTa`   : Delete till character 'a' backward
+`ci"`   : Change inside double quotes
+`yit`   : Yank in XML/HTML tag
+`cit`   : Change in tag
+`dat`   : Delete a XML/HTML tag
+`=it`   : Format in XML/HTML tag
+`da%`   : Delete a code block
+`y10k`  : Yank 10 lines up
+`cgn`   : Change next match
+`gUgn`  : Make next match uppercase
+`c/foo` : Change till 'foo'
+
+== Action can be perform with vim navigation as well ==
+`d2j`         : Delete 2 line down
+`dG`          : Delete till end of the file
+`dgg`         : Delete till beginning of the file
+`d Ctrl+v 2j` : Delete character 2 line down in current column
+`c)`          : Change sentence
+`>}`          : Add indent a paragraph
+`d$`          : Delete till end of the line
+`d0`          : Delete till beginning of the line
+
+== Other useful commands ==
+`.`      : Repeat last command
+`u`      : Undo
+`Ctrl+r` : Redo
+
+== Shorthand syntax ==
+`x`  : Deletes the character under the cursor (same as `dl`)
+`X`  : Deletes the character before the cursor (same as `dh`)
+`s`  : Substitute text, Delete character and switch to insert mode (same as `ch`)
+`S`  : Substitute line (same as `cc`)
+`~`  : Switch case of character
+`r`  : Replace single character
+`J`  : Join line below to the current one with one space in between
+`gJ` : Join line below to the current one without space in between
+
+== Double an operator to apply operation on a whole line ==
+`dd` : Deletes a whole line
+`cc` : Change a whole line
+`yy` : Yank (copy) a line (same as `Y`)
+`>>` : Indent line
+`<<` : Remove indent from line
+
+== Capitalize an operator to have it perform a stronger (or alternate) version of its default behavior ==
+`C` : Change from the cursor to the end of a line
+`Y` : Copies a complete line (same as `yy`)
+`D` : Deletes from the cursor to the end of the line
+`P` : Put (paste) before cursor
+`V` : Visually select line

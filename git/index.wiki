@@ -1,0 +1,4 @@
+- [[git/reset|Reset]]: undo commits or unstage files
+- git reflog
+- git rebase
+- git reset

@@ -1,0 +1,20 @@
+= Jumplist =
+Vim remembers the locations you have recently visited (where you jumped from).  Each position (file name, column number, line number) is recorded in a jump list, and each window has a separate jump list that records the last 100 positions where a jump occurred.
+
+`%`      : Jump to the matching braces or parenthesis.
+`{`      : Jump backward one paragraph.
+`}`      : Jump forward one paragraph.
+`(`      : Jump backward one sentence.
+`)`      : Jump forward one sentence.
+`n%`     : Jump to the nth percentage line of the file
+`nG`     : Jump to the nth line of the file
+`G`      : Jump to the end of the file
+`gg`     : Jump to the beginning of the file
+`H`      : Jump to the top (high) of the screen
+`M`      : Jump to the middle (medium) of the screen
+`L`      : Jump to the bottom (low) of the screen
+``”`     : Jump to the position where you were in NORMAL MODE while last closing the file
+``^`     : Jump to the position where you were in INSERT MODE while last closing the file
+`ctrl-o` : Jump backward in jump list
+`ctrl-i` : Jump forward in jump list
+`:jumps` : View the content of Jumplist

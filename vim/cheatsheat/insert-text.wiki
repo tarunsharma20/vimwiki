@@ -1,0 +1,8 @@
+= Insert Text =
+`i`   : Insert before the cursor
+`I`   : Insert at the beginning of the line
+`a`   : Append after the cursor
+`A`   : Append at the end of the line
+`o`   : Open a new line below the current line
+`O`   : Open a new line above the current line
+`Esc` : Exit insert mode

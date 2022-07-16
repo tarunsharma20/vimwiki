@@ -1,0 +1,65 @@
+= Working with multiple files =
+== Buffers ==
+`:e[dit] file`           : Open a new buffer for file
+`:ls`                    : List all open buffers, work same as `:buffers`
+`:bn[ext]`               : Go to next buffer
+`:bp[revious]`           : Go to previous buffer
+`Ctrl+^`                 : Switch between alternate buffers, you can also use `:b#`
+`:bd[elete]`             : Delete buffer (Make the buffer invisible, but leaves it in memory)
+`:bd[elete] n/name`      : Delete buffer(s) with matching name or number. You can use more then one name or number separate with space
+`:bw[ipeout]`            : Wipeout buffer from memory
+`:bw[ipeout] n/name     `: Wipeout buffer(s) with matchine name or number. You can use more then one name or number separate with space
+`%bw[ipeout]`            : Wipeout all buffer
+`:b[uffer] n/name`       : Open buffer with a number or name
+`:sb[uffer] n/name`      : Open buffer with name or number in horizontally split window
+`:vert sb[uffer] n/name `: Open buffer with name or number in vertically split window
+
+== Window ==
+`:q[uit]  `: Quit window
+`:q[uit]!` : Quit window and through away unsaved changes
+`:w[rite]` : Write (save) the file
+`:wq`      : Write (save) changes and quit
+`:wa`      : Write (save) on all windows
+`:qa`      : Quit all windows
+`:wqa`     : Write (save) and quit all windows
+
+== Split window ==
+You can open horizontally or vertically split window using `:sp[lit]` and `:vs[plit]` command respectively. By default, they duplicate the current buffer, you can also specify file using `:sp` file-path or `:vs` file-path. New split window height and width also can be specified `:10vs` or `:10sp` respectively.
+
+`Ctrl+w n `: Open new horizontal split (same as `:new`)
+`Ctrl+w s `: Split window horizontally (same as `:sp[lit]`)
+`Ctrl+w v `: Split window vertically (same as `:vs[plit]`)
+`Ctrl+w c `: Close current window (same as `:close`)
+`Ctrl+w o `: Close all split window but current (same as `:on[ly]`)
+`Ctrl+w w `: Cycle between the open windows
+`Ctrl+w h `: Move cursor to the left window (vertical split)
+`Ctrl+w l `: Move cursor to the right window (vertical split)
+`Ctrl+w j `: Move cursor to the window below (horizontal split)
+`Ctrl+w k `: Move cursor to the window above (horizontal split)
+`Ctrl+w | `: Maximize vertically split window or `Ctrl+w 10|` to make it 10 columns wide
+`Ctrl+w _ `: Maximize horizontally split window or `Ctrl+w 10_` to make it 10 row long
+`Ctrl+w > `: Scale vertically split window or `Ctrl+w 10>` to scale 10 columns
+`Ctrl+w < `: Scale down vertically split window or `Ctrl+w 10<` to scale down 10 columns
+`Ctrl+w + `: Scale horizontally split window or `Ctrl+w 10+` to scale 10 rows
+`Ctrl+w - `: Scale down horizontally split window or `Ctrl+w 10-` to scale down 10 rows
+`Ctrl+w = `: Resize/Normalize all split window
+`Ctrl+w T `: Open current window into a new tab
+`Ctrl+w r `: Reverse/Swap split windows
+`Ctrl+w x `: Exchange current window with neighbour
+`Ctrl+w H `: Move current window to far left
+`Ctrl+w J `: Move current window to bottom
+`Ctrl+w K `: Move current window to top
+`Ctrl+w L `: Move current window to far right
+
+== Tabs ==
+`:tabnew`      : Open new tab
+`:tabnew file` : Open file in a new tab
+`:tabs       ` : List all tabs including their displayed windows
+`gt`           : Go to the next tab (same as `:tabn[ext]`)
+`gT`           : Go to the previous tab (same as `:tabp[rev]`)
+`:tabfirst   ` : Go to the first tab
+`:tablast`     : Go to the last tab
+`ngt`          : Go to tab `n` number tab
+`:tabmove n`   : Move current tab to the `nth` position (indexed from 0)
+`:tabc[lose] ` : Close the current tab and all its windows
+`:tabo[nly]  ` : Close all tabs but the current one= Buffers ==
